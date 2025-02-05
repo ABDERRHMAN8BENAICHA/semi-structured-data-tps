@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <!DOCTYPE RegistrationNumber SYSTEM "TP1.dtd"> -->
+<RegistrationNumber>
+    <FirstName>Abderrhmane</FirstName>
+    <FamilyName>Ben Aicha</FamilyName>
+    <Age>20</Age>
+    <Level>3L</Level>
+    <Speciality>ComputerScience</Speciality>
+    <Average>19.99</Average>
+    <Address>
+        <Number>123</Number>
+        <City>Eloued</City>
+        <PostalCode>39020</PostalCode>
+    </Address>
+</RegistrationNumber>
