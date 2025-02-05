@@ -1,3 +1,15 @@
-<!DOCTYPE RegistrationNumber [
-    
+<!DOCTYPE Students [
+    <!ELEMENT Students (Student+)>
+    <!ELEMENT Student (FirstName, FamilyName, Age, Level, Speciality, Average, Address?)>
+    <!ATTLIST Student RegistrationNumber CDATA #REQUIRED>
+    <!ELEMENT FirstName (#PCDATA)>
+    <!ELEMENT FamilyName (#PCDATA)>
+    <!ELEMENT Age (#PCDATA)>
+    <!ELEMENT Level (#PCDATA)>
+    <!ELEMENT Average (#PCDATA)>
+    <!ELEMENT Speciality (#PCDATA)>
+    <!ELEMENT Address (Number, City, PostalCode)>
+    <!ELEMENT Number (#PCDATA)>
+    <!ELEMENT City (#PCDATA)>
+    <!ELEMENT PostalCode (#PCDATA)>
 ]>
