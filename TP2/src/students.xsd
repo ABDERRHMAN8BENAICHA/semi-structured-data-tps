@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+
+    <xs:element name="University">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Student" type="StudentType" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="StudentType">
+        <xs:sequence>
+            <xs:element name="FirstName" type="xs:string"/>
+            <xs:element name="FamilyName" type="xs:string"/>
+            <xs:element name="Age" type="AgeType"/>
+            <xs:element name="Address" type="AddressType" minOccurs="0"/>
+            <xs:element name="Level" type="LevelType"/>
+            <xs:element name="Speciality" type="SpecialityType"/>
+            <xs:element name="Average" type="AverageType"/>
+        </xs:sequence>
+        <xs:attribute name="RegistrationNumber" type="xs:string" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="AddressType">
+        <xs:sequence>
+            <xs:element name="Number" type="xs:int"/>
+            <xs:element name="City" type="xs:string"/>
+            <xs:element name="PostalCode" type="PostalCodeType"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="AgeType">
+        <xs:restriction base="xs:int">
+            <xs:minInclusive value="1"/>
+            <xs:maxInclusive value="150"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="PostalCodeType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\d{5}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="AverageType">
+        <xs:restriction base="xs:decimal">
+            <xs:minInclusive value="0.00"/>
+            <xs:maxInclusive value="20.00"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="LevelType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="1L"/>
+            <xs:enumeration value="2L"/>
+            <xs:enumeration value="3L"/>
+            <xs:enumeration value="1M"/>
+            <xs:enumeration value="2M"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="SpecialityType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="ComputerScience"/>
+            <xs:enumeration value="Physics"/>
+            <xs:enumeration value="Chemistry"/>
+            <xs:enumeration value="Mathematics"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>
