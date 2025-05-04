@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="task1.xsd">
+    <book ISBN="978-3-16-148410-0">
+        <title>Learning XML</title>
+        <author>John Doe</author>
+        <year>2021</year>
+    </book>
+</library>

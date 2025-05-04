@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Invoices xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="invoice_schema.xsd">
+  
+  <Invoice>
+    <InvoiceNumber>INV2025001</InvoiceNumber>
+    <InvoiceDate>04/05/2025</InvoiceDate>
+    <Seller>
+      <BusinessName>Electrotech Solutions Algeria</BusinessName>
+      <Address>
+        <Number>1234</Number>
+        <City>El Oued</City>
+        <PostalCode>39000</PostalCode>
+      </Address>
+      <MobileNumber>0612345678</MobileNumber>
+      <TaxIdentificationNumber>123456789012345</TaxIdentificationNumber>
+    </Seller>
+    <Buyer>
+      <BusinessName>University Echahid Hamma Lakhdar El Oued</BusinessName>
+      <TaxIdentificationNumber>987654321098765</TaxIdentificationNumber>
+    </Buyer>
+    <Items>
+      <Item>
+        <Description>Dell Latitude 5420 Laptop Computer</Description>
+        <Quantity>5</Quantity>
+        <UnitPrice>85000.00</UnitPrice>
+        <TotalPrice>425000.00</TotalPrice>
+      </Item>
+      <Item>
+        <Description>HP LaserJet Pro M404dn Printer</Description>
+        <Quantity>2</Quantity>
+        <UnitPrice>35000.00</UnitPrice>
+        <TotalPrice>70000.00</TotalPrice>
+      </Item>
+      <Item>
+        <Description>Microsoft Office Professional 2023 License</Description>
+        <Quantity>10</Quantity>
+        <UnitPrice>12000.00</UnitPrice>
+        <TotalPrice>120000.00</TotalPrice>
+      </Item>
+    </Items>
+  </Invoice>
+  
+  <Invoice>
+    <InvoiceNumber>INV2025002</InvoiceNumber>
+    <InvoiceDate>03/05/2025</InvoiceDate>
+    <Seller>
+      <BusinessName>Computer Hardware Supplies Algeria SARL</BusinessName>
+      <Address>
+        <Number>0546</Number>
+        <City>Alger</City>
+        <PostalCode>16000</PostalCode>
+      </Address>
+      <MobileNumber>0778901234</MobileNumber>
+      <TaxIdentificationNumber>567890123456789</TaxIdentificationNumber>
+    </Seller>
+    <Buyer>
+      <BusinessName>Faculty of Exact Sciences Department of Computer Science</BusinessName>
+      <TaxIdentificationNumber>654321987654321</TaxIdentificationNumber>
+    </Buyer>
+    <Items>
+      <Item>
+        <Description>Network Switch Cisco Catalyst 2960-X Series</Description>
+        <Quantity>3</Quantity>
+        <UnitPrice>45000.00</UnitPrice>
+        <TotalPrice>135000.00</TotalPrice>
+      </Item>
+      <Item>
+        <Description>Projector Epson EB-2250U Full HD</Description>
+        <Quantity>2</Quantity>
+        <UnitPrice>65000.00</UnitPrice>
+        <TotalPrice>130000.00</TotalPrice>
+      </Item>
+    </Items>
+  </Invoice>
+  
+</Invoices>

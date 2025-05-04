@@ -1,0 +1,6 @@
+<!ELEMENT Class (Student+)>
+<!ELEMENT Student (Name, Age, Grade)>
+<!ELEMENT Name (#PCDATA)>
+<!ELEMENT Age (#PCDATA)>
+<!ELEMENT Grade (#PCDATA)>
+<!ATTLIST Student id CDATA #REQUIRED>
