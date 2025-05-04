@@ -72,9 +72,8 @@
   </xs:simpleType>
 
   <xs:simpleType name="AddressNumberType">
-    <xs:restriction base="xs:string">
-      <xs:pattern value="[0-9]{4}"/>
-      <xs:minInclusive value="0001"/>
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="1"/>
       <xs:maxInclusive value="9999"/>
     </xs:restriction>
   </xs:simpleType>
