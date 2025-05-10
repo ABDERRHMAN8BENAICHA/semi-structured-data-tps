@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<University xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xsi:noNamespaceSchemaLocation="students.xsd">
+    <Student RegistrationNumber="2024001">
+        <FirstName>Ahmed</FirstName>
+        <FamilyName>Benali</FamilyName>
+        <Age>22</Age>
+        <Address>
+            <Number>25</Number>
+            <City>El Oued</City>
+            <PostalCode>39000</PostalCode>
+        </Address>
+        <Level>1L</Level>
+        <Speciality>ComputerScience</Speciality>
+        <Average>15.75</Average>
+    </Student>
+
+    <Student RegistrationNumber="2024002">
+        <FirstName>Sara</FirstName>
+        <FamilyName>Bouaziz</FamilyName>
+        <Age>21</Age>
+        <!-- Address is optional -->
+        <Level>1M</Level>
+        <Speciality>Mathematics</Speciality>
+        <Average>17.25</Average>
+    </Student>
+</University>

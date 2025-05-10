@@ -1,0 +1,17 @@
+<!ELEMENT University (Student+)>
+
+<!ELEMENT Student (FirstName, FamilyName, Age, Address?, Level, Speciality, Average)>
+<!ATTLIST Student RegistrationNumber CDATA #REQUIRED>
+
+<!ELEMENT FirstName (#PCDATA)>
+<!ELEMENT FamilyName (#PCDATA)>
+<!ELEMENT Age (#PCDATA)>
+
+<!ELEMENT Address (Number, City, PostalCode)>
+<!ELEMENT Number (#PCDATA)>
+<!ELEMENT City (#PCDATA)>
+<!ELEMENT PostalCode (#PCDATA)>
+
+<!ELEMENT Level (#PCDATA)>
+<!ELEMENT Speciality (#PCDATA)>
+<!ELEMENT Average (#PCDATA)>
